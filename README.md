@@ -20,8 +20,9 @@ It has to be noted that we strongly recommend to try different assemblers on you
 ## Figures
 
 ![Figure 1](./figures/Fig1.png)
-
 **Figure 1.** Evaluation of metagenome assembly size corresponding to each tested tool for the Even datasets. (A) Total assembled size of draft assemblies with respect to the total size of the reference metagenome; (B) Fraction of the reference metagenome covered by the draft assembly, calculated by two different methods: metaQUAST (up) and minimap2 + BBTools (down). *Note: the reason of applying two different methods in (B) is that metaQUAST failed to run the miniasm data for unkown reasons*.
+
+
 
 
 ![Figure 2](./figures/Fig2.png)
@@ -37,6 +38,7 @@ It has to be noted that we strongly recommend to try different assemblers on you
 ![Figure 4](./figures/Fig4.png)
 
 **Figure 4.** Assembly accuracy for the draft assemblies in the Even datasets. (A) Percentage of similarity calculated as the total number of matches normalized by the metagenome size; (B) Percentage of INDELs calculated as the total number of INDELs normalized by the metagenome size. In both cases, two different strategies were used: (1) alignment with minimap and evaluation with bcftools + ‘indels_and_snps.py’ in-house script; (2) alignment with MuMMer and evaluation with ‘count_SNPS_indels.pl’ script from Goldstein et al. (2019).
+
 
 
 ![Figure 5](./figures/Fig5.png)
@@ -62,6 +64,8 @@ It has to be noted that we strongly recommend to try different assemblers on you
 
 ## Supplementary tables
 
+**Table S1**. Canu’s basic assembly statistics for the GridION datasets.
+
 |                           |         | 3Gb         |     |         | 6Gb         |     |
 |---------------------------|---------|-------------|-----|---------|-------------|-----|
 |                           | Contigs | N50         | L50 | Contigs | N50         | L50 |
@@ -74,9 +78,19 @@ It has to be noted that we strongly recommend to try different assemblers on you
 | *Salmonella enterica*     | 3       | 4,942,769.0 | 1   | 11      | 2,075,612.0 | 2   |
 | *Staphylococcus aureus*   | 17      | 769,443.0   | 2   | 17      | 640,396.0   | 3   |
 
-**Table S1**. Canu’s basic assembly statistics for the GridION datasets.
-
-
-
 
 **Table S2**. Flye’s basic assembly statistics for the GridION datasets.
+
+|                           |         | 3Gb         |     |         | 6Gb         |     |
+|---------------------------|---------|-------------|-----|---------|-------------|-----|
+|                           | Contigs | N50         | L50 | Contigs | N50         | L50 |
+|  *Bacillus subtilis*      | 8       | 4,121,094.0 | 1   | 15      | 4,118,946.0 | 1   |
+| *Enterococcus faecalis*   | 4       | 2,916,346.0 | 2   | 8       | 2,917,992.0 | 1   |
+|  *Escherichia coli*       | 12      | 686,395.0   | 2   | 19      | 1,282,129.0 | 2   |
+| *Lactobacillus fermentum* | 6       | 1,916,903.0 | 1   | 21      | 1,909,954.0 | 1   |
+| *Listeria monocytogenes*  | 7       | 2,990,853.0 | 1   | 13      | 2,129,318.0 | 1   |
+| *Pseudomonas aeruginosa*  | 2       | 6,821,368.0 | 1   | 4       | 6,820,234.0 | 1   |
+| *Salmonella enterica*     | 12      | 1,848,158.0 | 2   | 15      | 1,282,129.0 | 2   |
+| *Staphylococcus aureus*   | 7       | 2,783,558.0 | 1   | 12      | 2,785,527.0 | 1   |
+
+These two tables clearly show that the combination of Canu and Flye could help to recovery all the genomes with a high degree of contiguity. As an example, *B. subtilis* genome is well recovered by Flye (3 and 6 Gbps datasets), but not by Canu. However, Canu clearly recovered  better *E. coli*'s genome than Flye.
