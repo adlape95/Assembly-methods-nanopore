@@ -92,3 +92,7 @@ It has to be noted that we strongly recommend to try different assemblers on you
 | *Staphylococcus aureus*   | 7       | 2,783,558.0 | 1   | 12      | 2,785,527.0 | 1   |
 
 These two tables clearly show that the combination of Canu and Flye could help to recovery all the genomes with a higher degree of contiguity. As an example, *B. subtilis* genome is well recovered by Flye (3 and 6 Gbps datasets), but not by Canu. However, Canu clearly recovered  better *E. coli*'s genome than Flye.
+
+## Final notes
+
+This repository is inspired by @rrwick [Benchmarking of long-read assemblers for prokaryote whole genome sequencing](https://github.com/rrwick/Long-read-assembler-comparison), where you can find a high quality benchmark for assembly prokaryote isolates.
