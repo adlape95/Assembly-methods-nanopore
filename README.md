@@ -12,7 +12,7 @@ Stay tuned!
 
 For impatient people: this is our personal pipeline recommendation for metagenomic assembly based on ONT sequences. The workflow could change by the time we perform new evaluations including different assemblers or data.
 
-It has to be noted that we strongly recommend to try different assemblers on your data in order to get a broader spectrum of what's in your samples!
+It has to be noted that we strongly recommend to try different assemblers on your data in order to reach a higher level of contiguity and completeness for every individual genome (*see Tables S1 and S2*).
 
 ![Workflow](./figures/Workflow.png)
 **Recommended ONT metagenomic assembly workflow**. *Based on August, 2019 evaluation*.
