@@ -1,0 +1,89 @@
+Mock_Community,Output,Assembler,Size,Fraction,Method,Avg
+Even,3Gb,Minia,58913564,4.215,metaQUAST,4.7
+Even,3Gb,Minia,58180363,5.229,metaQUAST,
+Even,3Gb,Megahit,-51677386,18.54,metaQUAST,18.7
+Even,3Gb,Megahit,-52411810,18.763,metaQUAST,
+Even,3Gb,Canu,28738786,46.77,metaQUAST,46.9
+Even,3Gb,Canu,28272532,46.954,metaQUAST,
+Even,3Gb,Unicycler,29894669,43.559,metaQUAST,43.9
+Even,3Gb,Unicycler,30131013,44.15,metaQUAST,
+Even,3Gb,miniasm,29813821,,metaQUAST,
+Even,3Gb,miniasm,30508350,,metaQUAST,
+Even,3Gb,metaFlye v2.4,24332634,50.652,metaQUAST,50.6
+Even,3Gb,metaFlye v2.4,24891419,50.546,metaQUAST,
+Even,3Gb,Raven,31097446,42.79,metaQUAST,43.1
+Even,3Gb,Raven,30703093,43.45,metaQUAST,
+Even,3Gb,RedBean,32134491,37.986,metaQUAST,37.8
+Even,3Gb,RedBean,32688658,37.669,metaQUAST,
+Even,3Gb,Shasta,44334209,24.425,metaQUAST,23.8
+Even,3Gb,Shasta,45226512,23.142,metaQUAST,
+Even,3Gb,metaFlye v2.7,26045273,50.498,metaQUAST,50.2
+Even,3Gb,metaFlye v2.7,26647470,49.81,metaQUAST,
+Even,3Gb,Pomoxis,26794675,47.555,metaQUAST,47.4
+Even,3Gb,Pomoxis,27051647,47.252,metaQUAST,
+Even,6Gb,Minia,59313577,3.624,metaQUAST,4.1
+Even,6Gb,Minia,58676585,4.52,metaQUAST,
+Even,6Gb,Megahit,-128303191,21.476,metaQUAST,21.8
+Even,6Gb,Megahit,-126422515,22.153,metaQUAST,
+Even,6Gb,Canu,18297390,60.703,metaQUAST,60.9
+Even,6Gb,Canu,17840380,61.06,metaQUAST,
+Even,6Gb,Unicycler,51472574,14.454,metaQUAST,16.6
+Even,6Gb,Unicycler,47752333,18.683,metaQUAST,
+Even,6Gb,miniasm,27634586,,metaQUAST,
+Even,6Gb,miniasm,28948503,,metaQUAST,
+Even,6Gb,metaFlye v2.4,8506672,70.385,metaQUAST,70.4
+Even,6Gb,metaFlye v2.4,9267809,70.427,metaQUAST,
+Even,6Gb,Raven,19039521,59.584,metaQUAST,60.1
+Even,6Gb,Raven,18446593,60.647,metaQUAST,
+Even,6Gb,RedBean,25789322,41.557,metaQUAST,41.7
+Even,6Gb,RedBean,25633257,41.917,metaQUAST,
+Even,6Gb,Shasta,43444019,25.6,metaQUAST,28.1
+Even,6Gb,Shasta,39939154,30.566,metaQUAST,
+Even,6Gb,metaFlye v2.7,11391064,69.693,metaQUAST,69.4
+Even,6Gb,metaFlye v2.7,12358683,69.119,metaQUAST,
+Even,6Gb,Pomoxis,13223624,65.291,metaQUAST,65.7
+Even,6Gb,Pomoxis,13557967,66.091,metaQUAST,
+Even,3Gb,Minia,58913564,37.96,minimap2,38.3
+Even,3Gb,Minia,58180363,38.55,minimap2,
+Even,3Gb,Megahit,-51677386,75.67,minimap2,75.5
+Even,3Gb,Megahit,-52411810,75.3,minimap2,
+Even,3Gb,Canu,28738786,45.78,minimap2,46.0
+Even,3Gb,Canu,28272532,46.26,minimap2,
+Even,3Gb,Unicycler,29894669,42.96,minimap2,43.1
+Even,3Gb,Unicycler,30131013,43.15,minimap2,
+Even,3Gb,miniasm,29813821,42.63,minimap2,42.7
+Even,3Gb,miniasm,30508350,42.81,minimap2,
+Even,3Gb,metaFlye v2.4,24332634,51.32,minimap2,51.0
+Even,3Gb,metaFlye v2.4,24891419,50.73,minimap2,
+Even,3Gb,Raven,31097446,42.75,minimap2,43.1
+Even,3Gb,Raven,30703093,43.36,minimap2,
+Even,3Gb,RedBean,32134491,42.74,minimap2,42.1
+Even,3Gb,RedBean,32688658,41.5,minimap2,
+Even,3Gb,Shasta,44334209,24.24,minimap2,23.7
+Even,3Gb,Shasta,45226512,23.16,minimap2,
+Even,3Gb,metaFlye v2.7,26045273,49.91,minimap2,49.5
+Even,3Gb,metaFlye v2.7,26647470,49.06,minimap2,
+Even,3Gb,Pomoxis,26794675,46.73,minimap2,46.7
+Even,3Gb,Pomoxis,27051647,46.61,minimap2,
+Even,6Gb,Minia,59313577,33.97,minimap2,34.1
+Even,6Gb,Minia,58676585,34.13,minimap2,
+Even,6Gb,Megahit,-128303191,82.68,minimap2,82.7
+Even,6Gb,Megahit,-126422515,82.7,minimap2,
+Even,6Gb,Canu,18297390,59.59,minimap2,60.0
+Even,6Gb,Canu,17840380,60.35,minimap2,
+Even,6Gb,Unicycler,51472574,14.71,minimap2,17.2
+Even,6Gb,Unicycler,47752333,19.71,minimap2,
+Even,6Gb,miniasm,27634586,45.19,minimap2,45.1
+Even,6Gb,miniasm,28948503,45.1,minimap2,
+Even,6Gb,metaFlye v2.4,8506672,72.98,minimap2,72.6
+Even,6Gb,metaFlye v2.4,9267809,72.17,minimap2,
+Even,6Gb,Raven,19039521,59.67,minimap2,60.0
+Even,6Gb,Raven,18446593,60.3,minimap2,
+Even,6Gb,RedBean,25789322,51.95,minimap2,52.0
+Even,6Gb,RedBean,25633257,52.11,minimap2,
+Even,6Gb,Shasta,43444019,25.44,minimap2,27.9
+Even,6Gb,Shasta,39939154,30.36,minimap2,
+Even,6Gb,metaFlye v2.7,11391064,70.14,minimap2,69.8
+Even,6Gb,metaFlye v2.7,12358683,69.36,minimap2,
+Even,6Gb,Pomoxis,13223624,65.08,minimap2,65.4
+Even,6Gb,Pomoxis,13557967,65.63,minimap2,

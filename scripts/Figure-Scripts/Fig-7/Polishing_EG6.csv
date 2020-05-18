@@ -1,0 +1,25 @@
+Assembler;Data for polishing;Type;Percentage of improvement;Similarity (%);Indels (%)
+Canu;Nanopore;SNPs;-12.717;99.824;
+Flye;Nanopore;SNPs;36.185;99.396;
+MetaFlye;Nanopore;SNPs;38.871;99.505;
+Pomoxis;Nanopore;SNPs;91.569;99.662;
+Raven ;Nanopore;SNPs;90.449;99.607;
+Redbean;Nanopore;SNPs;29.517;99.246;
+Canu;Nanopore;INDELs;46.145;;0.435
+Flye;Nanopore;INDELs;73.744;;0.855
+MetaFlye;Nanopore;INDELs;63.698;;0.759
+Pomoxis;Nanopore;INDELs;91.203;;0.558
+Raven ;Nanopore;INDELs;91.896;;0.525
+Redbean;Nanopore;INDELs;71.881;;0.59
+Canu;Illumina;SNPs;28.371;99.888;
+Flye;Illumina;SNPs;38.198;99.415;
+MetaFlye;Illumina;SNPs;41.794;99.529;
+Pomoxis;Illumina;SNPs;82.814;99.311;
+Raven ;Illumina;SNPs;85.193;99.391;
+Redbean;Illumina;SNPs;27.815;99.228;
+Canu;Illumina;INDELs;80.346;;0.159
+Flye;Illumina;INDELs;76.493;;0.765
+MetaFlye;Illumina;INDELs;73.539;;0.553
+Pomoxis;Illumina;INDELs;85.515;;0.918
+Raven ;Illumina;INDELs;87.762;;0.793
+Redbean;Illumina;INDELs;58.493;;0.87

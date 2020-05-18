@@ -1,0 +1,193 @@
+---
+title: "Biosynthetic cluster"
+author: "Pascual Villalba"
+date: "15th July 2019"
+output: html_document
+update: "10th May 2020"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## **Biosynthetic gene clusters (Even_GridION_3Gb)**
+
+```{r}
+## Library
+library(ggplot2)
+library(RColorBrewer)
+
+## Dataset
+cluster = read.csv(file = "EG3_BGCs.csv", header = FALSE, sep = ",")
+colnames(cluster) = c("Assembler", "BGC", "Counts")
+# Create a vector of each column. It's necessary to change the order of the BGC's.
+Assembler = cluster$Assembler
+Counts = cluster$BGC
+Ref = cluster[which(cluster$Assembler == "Reference"),] # Attach the reference dataset
+Ref = Ref[order(Ref$Counts, decreasing = TRUE),] # Order the reference dataset by counts decreasing.
+cluster$BGC = factor(cluster$BGC, levels = Ref$BGC) # Order BGC levels with the results of counts decreasing in the reference dataset.
+BGC = cluster$BGC
+
+## BGC totals by Assembler (Numbers top of bars)
+library(dplyr)
+totals = cluster %>% group_by(Assembler) %>% summarize(total = sum(Counts))
+```
+
+
+
+
+```{r}
+colourCount = length(levels(BGC))
+getPalette = colorRampPalette(brewer.pal(9, "Set1"))
+
+## Stacked
+p1.1 = ggplot(cluster, aes(fill = BGC, y = Counts, x = Assembler)) + 
+    geom_bar( stat = "identity", color = "black") +
+  geom_text(aes(Assembler, total + 2, label = total, fill = NULL), data = totals) + theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  ylab("Counts") + xlab("Assembler") +
+  scale_y_continuous(breaks = seq(0, 60, 5)) +
+  scale_x_discrete(limits = c("Reference", "Canu", "metaFlye v2.4", "metaFlye v2.7", "miniasm", "Pomoxis", "Raven", "Redbean", "Shasta", "Unicycler", "Megahit", "Minia")) +
+  scale_fill_manual(values = getPalette(colourCount)) + 
+  guides(fill = guide_legend(ncol = 1))
+
+p1.2 = p1.1 + theme(legend.position="top") + guides(fill = guide_legend(nrow = 3, ncol = NULL)) + ylab("Counts") + xlab("")
+p1.3 = p1.1 + theme(legend.position="top") + guides(fill = guide_legend(nrow = 3, ncol = NULL)) + ylab("") + xlab("")
+
+addSmallLegend = function(myPlot, pointSize, textSize, titleSize, spaceLegend) {
+    myPlot +
+        guides(shape = guide_legend(override.aes = list(size = pointSize)),
+               color = guide_legend(override.aes = list(size = pointSize))) +
+        theme(legend.title = element_text(size = titleSize), 
+              legend.text  = element_text(size = textSize),
+              legend.key.size = unit(spaceLegend, "lines"))
+  
+}
+
+
+p1.1 = addSmallLegend(p1.1, 0.04, 9, 10, 0.8)
+p1.2 = addSmallLegend(p1.2, 0.04, 7, 10, 0.75)
+p1.3 = addSmallLegend(p1.3, 0.04, 7, 10, 0.75)
+
+p1.1
+
+```
+
+
+
+## **Biosynthetic gene clusters (Even_GridION_6Gb)**
+
+
+```{r}
+## Library
+library(ggplot2)
+library(RColorBrewer)
+
+## Dataset
+cluster = read.csv(file = "EG6_BGCs.csv", header = FALSE, sep = ",")
+colnames(cluster) = c("Assembler", "BGC", "Counts")
+# Create a vector of each column. It's necessary to change the order of the BGC's.
+Assembler = cluster$Assembler
+Counts = cluster$BGC
+Ref = cluster[which(cluster$Assembler == "Reference"),] # Attach the reference dataset
+Ref = Ref[order(Ref$Counts, decreasing = TRUE),] # Order the reference dataset by counts decreasing.
+cluster$BGC = factor(cluster$BGC, levels = Ref$BGC) # Order BGC levels with the results of counts decreasing in the reference dataset.
+BGC = cluster$BGC
+
+## BGC totals by Assembler (Numbers top of bars)
+library(dplyr)
+totals = cluster %>% group_by(Assembler) %>% summarize(total = sum(Counts))
+```
+
+
+
+```{r}
+colourCount = length(levels(BGC))
+getPalette = colorRampPalette(brewer.pal(9, "Set1"))
+
+## Stacked
+p2.1 = ggplot(cluster, aes(fill = BGC, y = Counts, x = Assembler)) + 
+    geom_bar( stat = "identity", color = "black") +
+  geom_text(aes(Assembler, total + 2, label = total, fill = NULL), data = totals) + theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  ylab("Counts") + xlab("Assembler") +
+  scale_y_continuous(breaks = seq(0, 50, 5)) +
+  scale_x_discrete(limits = c("Reference", "Canu", "metaFlye v2.4", "metaFlye v2.7", "miniasm", "Pomoxis", "Raven", "Redbean", "Shasta", "Unicycler", "Megahit", "Minia")) +
+  scale_fill_manual(values = getPalette(colourCount)) + 
+  guides(fill = guide_legend(ncol = 1))
+
+p2.2 = p2.1 + theme(legend.position="top") + guides(fill = guide_legend(nrow = 3, ncol = NULL)) + ylab("") + xlab("")
+
+p2.1 = addSmallLegend(p2.1, 0.04, 9, 10, 0.8)
+p2.2 = addSmallLegend(p2.2, 0.04, 7, 10, 0.75)
+
+p2.1
+```
+
+
+
+
+```{r}
+library(gridExtra)
+library(ggpubr)
+
+p3 = ggarrange(p1.2 ,p2.2, legend = "top", common.legend = TRUE, widths = c(1,1), labels = c("A", "B"))
+p4 = ggarrange(p1.3 ,p2.2, legend = "top", common.legend = TRUE, widths = c(1,1), labels = c("A", "B"))
+
+# Annotate the figure by adding a common labels
+p4 = annotate_figure(p4, bottom = text_grob("Assembler"),left = text_grob("Counts", rot = 90))
+
+p3
+p4
+```
+
+# Pomoxis vs Pomoxis-medaka
+
+```{r}
+## Library
+library(ggplot2)
+library(RColorBrewer)
+
+## Dataset
+cluster = read.csv(file = "PomoxisVSPomoxis-medaka.csv", header = FALSE, sep = ",")
+colnames(cluster) = c("Assembler", "BGC", "Counts")
+# Create a vector of each column. It's necessary to change the order of the BGC's.
+Assembler = cluster$Assembler
+Counts = cluster$BGC
+Ref = cluster[which(cluster$Assembler == "Reference"),] # Attach the reference dataset
+Ref = Ref[order(Ref$Counts, decreasing = TRUE),] # Order the reference dataset by counts decreasing.
+cluster$BGC = factor(cluster$BGC, levels = Ref$BGC) # Order BGC levels with the results of counts decreasing in the reference dataset.
+BGC = cluster$BGC
+
+## BGC totals by Assembler (Numbers top of bars)
+library(dplyr)
+totals = cluster %>% group_by(Assembler) %>% summarize(total = sum(Counts))
+```
+
+
+
+```{r}
+colourCount = length(levels(BGC))
+getPalette = colorRampPalette(brewer.pal(9, "Set1"))
+
+## Stacked
+p3 = ggplot(cluster, aes(fill = BGC, y = Counts, x = Assembler)) + 
+    geom_bar( stat = "identity", color = "black") +
+  geom_text(aes(Assembler, total + 2, label = total, fill = NULL), data = totals) + theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  ylab("Counts") + xlab("Assembler") +
+  scale_y_continuous(breaks = seq(0, 50, 5)) +
+  scale_x_discrete(limits = c("Reference", "Pomoxis-medaka", "Pomoxis")) +
+  scale_fill_manual(values = getPalette(colourCount)) + 
+  guides(fill = guide_legend(ncol = 4))
+
+p3 = p3 + theme(legend.position="top") + guides(fill = guide_legend(nrow = 3, ncol = NULL)) + ylab("") + xlab("")
+
+p3 = addSmallLegend(p3, 0.04, 9, 10, 0.8)
+p3 = addSmallLegend(p3, 0.04, 7, 10, 0.75)
+
+p3
+```
+
+Save and modify by Inkscape.

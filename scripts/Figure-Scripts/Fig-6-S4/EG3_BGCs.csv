@@ -1,0 +1,276 @@
+Minia,thiopeptide,0
+Minia,NRPS,0
+Minia,NRPS-like,0
+Minia,betalactone,0
+Minia,hserlactone,0
+Minia,phenazine,0
+Minia,bacteriocin,0
+Minia,TransAT-PKS-like,0
+Minia,siderophore,0
+Minia,terpene,0
+Minia,sactipeptide,0
+Minia,head_to_tail,0
+Minia,lanthipeptide,0
+Minia,CDPS,0
+Minia,phosphonate,0
+Minia,lassopeptide,0
+Minia,arylpolyene,0
+Minia,other,0
+Minia,TransAT-PKS,0
+Minia,PKS-like,0
+Minia,T3PKS,0
+Minia,LAP,0
+Minia,NAGGN,0
+Megahit,thiopeptide,0
+Megahit,NRPS,0
+Megahit,NRPS-like,0
+Megahit,betalactone,0
+Megahit,hserlactone,0
+Megahit,phenazine,0
+Megahit,bacteriocin,0
+Megahit,TransAT-PKS-like,0
+Megahit,siderophore,0
+Megahit,terpene,0
+Megahit,sactipeptide,1
+Megahit,head_to_tail,0
+Megahit,lanthipeptide,0
+Megahit,CDPS,0
+Megahit,phosphonate,0
+Megahit,lassopeptide,0
+Megahit,arylpolyene,1
+Megahit,other,0
+Megahit,TransAT-PKS,0
+Megahit,PKS-like,0
+Megahit,T3PKS,0
+Megahit,LAP,0
+Megahit,NAGGN,0
+Canu,thiopeptide,2
+Canu,NRPS,11
+Canu,NRPS-like,1
+Canu,betalactone,2
+Canu,hserlactone,2
+Canu,phenazine,2
+Canu,bacteriocin,3
+Canu,TransAT-PKS-like,1
+Canu,siderophore,3
+Canu,terpene,1
+Canu,sactipeptide,1
+Canu,head_to_tail,1
+Canu,lanthipeptide,1
+Canu,CDPS,1
+Canu,phosphonate,1
+Canu,lassopeptide,4
+Canu,arylpolyene,0
+Canu,other,1
+Canu,TransAT-PKS,0
+Canu,PKS-like,0
+Canu,T3PKS,2
+Canu,LAP,0
+Canu,NAGGN,0
+Unicycler,thiopeptide,1
+Unicycler,NRPS,11
+Unicycler,NRPS-like,0
+Unicycler,betalactone,2
+Unicycler,hserlactone,2
+Unicycler,phenazine,2
+Unicycler,bacteriocin,2
+Unicycler,TransAT-PKS-like,1
+Unicycler,siderophore,3
+Unicycler,terpene,3
+Unicycler,sactipeptide,1
+Unicycler,head_to_tail,1
+Unicycler,lanthipeptide,1
+Unicycler,CDPS,1
+Unicycler,phosphonate,1
+Unicycler,lassopeptide,2
+Unicycler,arylpolyene,0
+Unicycler,other,1
+Unicycler,TransAT-PKS,1
+Unicycler,PKS-like,1
+Unicycler,T3PKS,4
+Unicycler,LAP,1
+Unicycler,NAGGN,0
+miniasm,thiopeptide,0
+miniasm,NRPS,5
+miniasm,NRPS-like,0
+miniasm,betalactone,0
+miniasm,hserlactone,0
+miniasm,phenazine,1
+miniasm,bacteriocin,1
+miniasm,TransAT-PKS-like,0
+miniasm,siderophore,0
+miniasm,terpene,0
+miniasm,sactipeptide,0
+miniasm,head_to_tail,0
+miniasm,lanthipeptide,0
+miniasm,CDPS,0
+miniasm,phosphonate,0
+miniasm,lassopeptide,0
+miniasm,arylpolyene,0
+miniasm,other,0
+miniasm,TransAT-PKS,0
+miniasm,PKS-like,0
+miniasm,T3PKS,0
+miniasm,LAP,0
+miniasm,NAGGN,0
+metaFlye v2.4,thiopeptide,2
+metaFlye v2.4,NRPS,7
+metaFlye v2.4,NRPS-like,0
+metaFlye v2.4,betalactone,1
+metaFlye v2.4,hserlactone,0
+metaFlye v2.4,phenazine,2
+metaFlye v2.4,bacteriocin,2
+metaFlye v2.4,TransAT-PKS-like,0
+metaFlye v2.4,siderophore,3
+metaFlye v2.4,terpene,2
+metaFlye v2.4,sactipeptide,1
+metaFlye v2.4,head_to_tail,0
+metaFlye v2.4,lanthipeptide,1
+metaFlye v2.4,CDPS,1
+metaFlye v2.4,phosphonate,0
+metaFlye v2.4,lassopeptide,15
+metaFlye v2.4,arylpolyene,0
+metaFlye v2.4,other,0
+metaFlye v2.4,TransAT-PKS,1
+metaFlye v2.4,PKS-like,0
+metaFlye v2.4,T3PKS,0
+metaFlye v2.4,LAP,0
+metaFlye v2.4,NAGGN,0
+Raven,thiopeptide,1
+Raven,NRPS,10
+Raven,NRPS-like,2
+Raven,betalactone,2
+Raven,hserlactone,2
+Raven,phenazine,2
+Raven,bacteriocin,3
+Raven,TransAT-PKS-like,1
+Raven,siderophore,3
+Raven,terpene,3
+Raven,sactipeptide,1
+Raven,head_to_tail,1
+Raven,lanthipeptide,1
+Raven,CDPS,1
+Raven,phosphonate,1
+Raven,lassopeptide,3
+Raven,arylpolyene,0
+Raven,other,1
+Raven,TransAT-PKS,1
+Raven,PKS-like,1
+Raven,T3PKS,3
+Raven,LAP,1
+Raven,NAGGN,0
+Redbean,thiopeptide,0
+Redbean,NRPS,10
+Redbean,NRPS-like,1
+Redbean,betalactone,2
+Redbean,hserlactone,2
+Redbean,phenazine,2
+Redbean,bacteriocin,3
+Redbean,TransAT-PKS-like,0
+Redbean,siderophore,2
+Redbean,terpene,2
+Redbean,sactipeptide,0
+Redbean,head_to_tail,0
+Redbean,lanthipeptide,1
+Redbean,CDPS,1
+Redbean,phosphonate,0
+Redbean,lassopeptide,0
+Redbean,arylpolyene,1
+Redbean,other,0
+Redbean,TransAT-PKS,1
+Redbean,PKS-like,0
+Redbean,T3PKS,1
+Redbean,LAP,0
+Redbean,NAGGN,0
+Shasta,thiopeptide,2
+Shasta,NRPS,6
+Shasta,NRPS-like,0
+Shasta,betalactone,0
+Shasta,hserlactone,2
+Shasta,phenazine,1
+Shasta,bacteriocin,2
+Shasta,TransAT-PKS-like,0
+Shasta,siderophore,2
+Shasta,terpene,1
+Shasta,sactipeptide,0
+Shasta,head_to_tail,0
+Shasta,lanthipeptide,0
+Shasta,CDPS,0
+Shasta,phosphonate,0
+Shasta,lassopeptide,0
+Shasta,arylpolyene,1
+Shasta,other,0
+Shasta,TransAT-PKS,0
+Shasta,PKS-like,0
+Shasta,T3PKS,0
+Shasta,LAP,0
+Shasta,NAGGN,0
+metaFlye v2.7,thiopeptide,1
+metaFlye v2.7,NRPS,11
+metaFlye v2.7,NRPS-like,0
+metaFlye v2.7,betalactone,2
+metaFlye v2.7,hserlactone,2
+metaFlye v2.7,phenazine,2
+metaFlye v2.7,bacteriocin,3
+metaFlye v2.7,TransAT-PKS-like,1
+metaFlye v2.7,siderophore,3
+metaFlye v2.7,terpene,3
+metaFlye v2.7,sactipeptide,1
+metaFlye v2.7,head_to_tail,1
+metaFlye v2.7,lanthipeptide,1
+metaFlye v2.7,CDPS,1
+metaFlye v2.7,phosphonate,0
+metaFlye v2.7,lassopeptide,3
+metaFlye v2.7,arylpolyene,0
+metaFlye v2.7,other,1
+metaFlye v2.7,TransAT-PKS,1
+metaFlye v2.7,PKS-like,1
+metaFlye v2.7,T3PKS,3
+metaFlye v2.7,LAP,1
+metaFlye v2.7,NAGGN,1
+Pomoxis,thiopeptide,2
+Pomoxis,NRPS,13
+Pomoxis,NRPS-like,1
+Pomoxis,betalactone,2
+Pomoxis,hserlactone,2
+Pomoxis,phenazine,2
+Pomoxis,bacteriocin,3
+Pomoxis,TransAT-PKS-like,1
+Pomoxis,siderophore,3
+Pomoxis,terpene,2
+Pomoxis,sactipeptide,1
+Pomoxis,head_to_tail,1
+Pomoxis,lanthipeptide,1
+Pomoxis,CDPS,1
+Pomoxis,phosphonate,0
+Pomoxis,lassopeptide,3
+Pomoxis,arylpolyene,0
+Pomoxis,other,1
+Pomoxis,TransAT-PKS,0
+Pomoxis,PKS-like,1
+Pomoxis,T3PKS,3
+Pomoxis,LAP,0
+Pomoxis,NAGGN,0
+Reference,thiopeptide,3
+Reference,NRPS,11
+Reference,NRPS-like,5
+Reference,betalactone,2
+Reference,hserlactone,2
+Reference,phenazine,2
+Reference,bacteriocin,5
+Reference,TransAT-PKS-like,1
+Reference,siderophore,3
+Reference,terpene,6
+Reference,sactipeptide,1
+Reference,head_to_tail,1
+Reference,lanthipeptide,1
+Reference,CDPS,1
+Reference,phosphonate,1
+Reference,lassopeptide,0
+Reference,arylpolyene,0
+Reference,other,1
+Reference,TransAT-PKS,2
+Reference,PKS-like,1
+Reference,T3PKS,4
+Reference,LAP,1
+Reference,NAGGN,1

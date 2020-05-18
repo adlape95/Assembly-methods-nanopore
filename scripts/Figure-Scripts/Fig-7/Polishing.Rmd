@@ -1,0 +1,104 @@
+---
+title: "Polishing"
+author: "Pascual Villalba"
+date: "11th May 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r}
+## Library
+library(ggplot2)
+library(RColorBrewer)
+library(dplyr)
+library(hrbrthemes)
+library(scales)
+
+## Dataset
+data = read.csv(file = "Polishing_EG6.csv", header = TRUE, sep = ";")
+colnames(data) = c("Assembler", "Data", "Type", "Percentage", "Similarity", "Indels")
+
+# Create datasets.
+dataset_1 = data[,1:4]
+dataset_1
+dataset_2 = data[which(data$Type == "SNPs"), c(1:3,5)]
+dataset_2
+dataset_3 = data[which(data$Type == "INDELs"),c(1:3,6)]
+dataset_3
+```
+
+
+
+
+```{r}
+## Mean
+mean = dataset_1 %>% group_by(Type, Data) %>% summarise(mean = mean(Percentage))
+mean
+
+## Vectors
+Percentage = dataset_1$Percentage
+Type = dataset_1$Type
+Data = dataset_1$Data
+
+## Figure 1
+p1 = ggplot(dataset_1, aes(Type, Percentage, fill = Data)) + geom_boxplot(outlier.shape=NA) + ylab("Improvement (%)") + xlab("") + geom_point(position = position_jitterdodge(), alpha = 0.4) + theme_bw() + guides(fill = guide_legend(title = "Type of polishing")) + scale_y_continuous(breaks = seq(-20, 100, 10), limits = c(-20, 100)) + theme(legend.position = "top")
+
+p1
+```
+
+
+
+
+```{r}
+## Vectors
+Similarity = dataset_2$Similarity
+Assembler = dataset_2$Assembler
+Data = dataset_2$Data
+
+
+# Figure
+p2 = ggplot(dataset_2, aes(fill = Data, y = Similarity, x = Assembler)) + geom_bar(position = "dodge", stat = "identity", color = "black") + theme_bw() + ylab("Similarity (%)") + xlab("") + guides(fill = guide_legend(title = "Type of polishing")) + geom_text(aes(label = round(Similarity,2)), position = position_dodge(width = 0.9), size = 3.5, vjust = -0.25) + scale_y_continuous(limits=c(99,100), oob = rescale_none, breaks = seq(99, 100, 0.1))
+
+p2.1 = ggplot(dataset_2, aes(fill = Data, y = Similarity, x = Assembler)) + geom_bar(position = "dodge", stat = "identity", color = "black") + theme_bw() + ylab("Similarity (%)") + xlab("") + guides(fill = guide_legend(title = "Type of polishing")) + geom_text(data = dataset_2, aes(label = round(Similarity,2)), position = position_dodge(width = 0.9), size = 3.5, vjust = 0.4, hjust = 1.5, angle = 90) + scale_y_continuous(limits=c(99,100), oob = rescale_none, breaks = seq(99, 100, 0.1)) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+
+p2
+```
+
+
+
+
+```{r}
+## Vectors
+Indels = dataset_3$Indels
+Assembler = dataset_3$Assembler
+Data = dataset_3$Data
+
+
+# Figure
+p3 = ggplot(dataset_3, aes(fill = Data, y = Indels, x = Assembler)) + geom_bar(position = "dodge", stat = "identity", color = "black") + theme_bw() + ylab("Indels (%)") + xlab("") + guides(fill = guide_legend(title = "Type of polishing")) + geom_text(aes(label = Indels), position = position_dodge(width = 0.9), size = 3.5, vjust = -0.25) + scale_y_continuous(breaks = seq(0, 1, 0.1))
+
+p3.1 = ggplot(dataset_3, aes(fill = Data, y = Indels, x = Assembler)) + geom_bar(position = "dodge", stat = "identity", color = "black") + theme_bw() + ylab("Indels (%)") + xlab("") + guides(fill = guide_legend(title = "Type of polishing")) + geom_text(aes(label = Indels), position = position_dodge(width = 0.9), size = 3.5, vjust = 0.40, hjust = 1.5, angle = 90) + scale_y_continuous(breaks = seq(0, 1, 0.1)) + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+p3
+```
+
+
+
+
+```{r}
+library(gridExtra)
+library(ggpubr)
+p4 = ggarrange(p1, labels = "A")
+p5 = ggarrange(p2.1 ,p3.1, legend = "top", common.legend = TRUE, nrow = 1, heights = c(2,2), labels = c("A", "B"))
+p6 = ggarrange(p2.1 ,p3.1, legend = "top", common.legend = TRUE, nrow = 1, heights = c(2,2), labels = c("B", "C"))
+p4
+p5
+p6
+```
+
+Let's save p4 and p6 and join them with Inkscape

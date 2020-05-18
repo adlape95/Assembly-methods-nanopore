@@ -1,0 +1,401 @@
+Type,Output,Assembler,Genome ,Fraction ,Mean_Fraction
+Log,3Gb,Canu,B. subtilis,43.49,42.798
+Log,3Gb,Canu,C. neoformans,,
+Log,3Gb,Canu,En. faecalis,,
+Log,3Gb,Canu,E. coli,,
+Log,3Gb,Canu,L. fermentum,,
+Log,3Gb,Canu,Li. monocytogenes,99.95,99.9585
+Log,3Gb,Canu,P. aeruginosa,99.883,99.7835
+Log,3Gb,Canu,S. cerevisiae,2.187,2.002
+Log,3Gb,Canu,Sa. enterica,,
+Log,3Gb,Canu,St. aureus,,
+Log,3Gb,metaFlye v2.4,B. subtilis,71.608,81.526
+Log,3Gb,metaFlye v2.4,C. neoformans,0.03,0.0295
+Log,3Gb,metaFlye v2.4,En. faecalis,0.028,0.055
+Log,3Gb,metaFlye v2.4,E. coli,,0.068
+Log,3Gb,metaFlye v2.4,L. fermentum,0.004,0.1165
+Log,3Gb,metaFlye v2.4,Li. monocytogenes,100,100
+Log,3Gb,metaFlye v2.4,P. aeruginosa,99.998,99.9755
+Log,3Gb,metaFlye v2.4,S. cerevisiae,3.546,3.701
+Log,3Gb,metaFlye v2.4,Sa. enterica,,0.014
+Log,3Gb,metaFlye v2.4,St. aureus,0.006,0.0715
+Log,3Gb,Megahit,B. subtilis,15.015,16.231
+Log,3Gb,Megahit,C. neoformans,0.006,0.0045
+Log,3Gb,Megahit,En. faecalis,0.657,0.6555
+Log,3Gb,Megahit,E. coli,3.942,3.87
+Log,3Gb,Megahit,L. fermentum,0.327,0.177
+Log,3Gb,Megahit,Li. monocytogenes,42.568,46.1495
+Log,3Gb,Megahit,P. aeruginosa,9.009,10.2775
+Log,3Gb,Megahit,S. cerevisiae,11.131,11.7115
+Log,3Gb,Megahit,Sa. enterica,2.931,2.8985
+Log,3Gb,Megahit,St. aureus,0.011,0.008
+Log,3Gb,Minia,B. subtilis,,0.083
+Log,3Gb,Minia,C. neoformans,0,0
+Log,3Gb,Minia,En. faecalis,,
+Log,3Gb,Minia,E. coli,,
+Log,3Gb,Minia,L. fermentum,,
+Log,3Gb,Minia,Li. monocytogenes,,
+Log,3Gb,Minia,P. aeruginosa,0.146,0.228
+Log,3Gb,Minia,S. cerevisiae,0.117,0.117
+Log,3Gb,Minia,Sa. enterica,,
+Log,3Gb,Minia,St. aureus,,
+Log,3Gb,Unicycler,B. subtilis,,
+Log,3Gb,Unicycler,C. neoformans,,
+Log,3Gb,Unicycler,En. faecalis,,
+Log,3Gb,Unicycler,E. coli,,
+Log,3Gb,Unicycler,L. fermentum,,
+Log,3Gb,Unicycler,Li. monocytogenes,,
+Log,3Gb,Unicycler,P. aeruginosa,,
+Log,3Gb,Unicycler,S. cerevisiae,,
+Log,3Gb,Unicycler,Sa. enterica,,
+Log,3Gb,Unicycler,St. aureus,,
+Log,3Gb,Pomoxis,B. subtilis,75.926,78.4625
+Log,3Gb,Pomoxis,C. neoformans,0.006,0.007
+Log,3Gb,Pomoxis,En. faecalis,,
+Log,3Gb,Pomoxis,E. coli,,
+Log,3Gb,Pomoxis,L. fermentum,,
+Log,3Gb,Pomoxis,Li. monocytogenes,99.964,99.9
+Log,3Gb,Pomoxis,P. aeruginosa,99.997,99.979
+Log,3Gb,Pomoxis,S. cerevisiae,0.81,0.928
+Log,3Gb,Pomoxis,Sa. enterica,,
+Log,3Gb,Pomoxis,St. aureus,,
+Log,3Gb,Raven,B. subtilis,71.579,69.7175
+Log,3Gb,Raven,C. neoformans,0.02,0.02
+Log,3Gb,Raven,En. faecalis,,
+Log,3Gb,Raven,E. coli,,
+Log,3Gb,Raven,L. fermentum,0.032,0.032
+Log,3Gb,Raven,Li. monocytogenes,99.961,99.962
+Log,3Gb,Raven,P. aeruginosa,99.997,99.939
+Log,3Gb,Raven,S. cerevisiae,0.166,0.1275
+Log,3Gb,Raven,Sa. enterica,0.002,0.002
+Log,3Gb,Raven,St. aureus,0.039,0.039
+Log,3Gb,RedBean,B. subtilis,20.663,21.684
+Log,3Gb,RedBean,C. neoformans,0.001,0.001
+Log,3Gb,RedBean,En. faecalis,0.041,0.0335
+Log,3Gb,RedBean,E. coli,0.066,0.0515
+Log,3Gb,RedBean,L. fermentum,0.02,0.012
+Log,3Gb,RedBean,Li. monocytogenes,0.509,0.362
+Log,3Gb,RedBean,P. aeruginosa,98.898,94.0985
+Log,3Gb,RedBean,S. cerevisiae,0.461,0.5505
+Log,3Gb,RedBean,Sa. enterica,0.016,0.014
+Log,3Gb,RedBean,St. aureus,0.026,0.0155
+Log,3Gb,Shasta,B. subtilis,,
+Log,3Gb,Shasta,C. neoformans,,
+Log,3Gb,Shasta,En. faecalis,,
+Log,3Gb,Shasta,E. coli,,
+Log,3Gb,Shasta,L. fermentum,,
+Log,3Gb,Shasta,Li. monocytogenes,99.964,99.9465
+Log,3Gb,Shasta,P. aeruginosa,88.852,86.643
+Log,3Gb,Shasta,S. cerevisiae,,
+Log,3Gb,Shasta,Sa. enterica,,
+Log,3Gb,Shasta,St. aureus,,
+Log,3Gb,metaFlye v2.7,B. subtilis,66.735,77.833
+Log,3Gb,metaFlye v2.7,C. neoformans,0.006,0.006
+Log,3Gb,metaFlye v2.7,En. faecalis,,
+Log,3Gb,metaFlye v2.7,E. coli,,0.049
+Log,3Gb,metaFlye v2.7,L. fermentum,,
+Log,3Gb,metaFlye v2.7,Li. monocytogenes,99.964,99.964
+Log,3Gb,metaFlye v2.7,P. aeruginosa,99.998,99.998
+Log,3Gb,metaFlye v2.7,S. cerevisiae,1.297,1.6425
+Log,3Gb,metaFlye v2.7,Sa. enterica,,0.046
+Log,3Gb,metaFlye v2.7,St. aureus,,
+Log,3Gb,Canu,B. subtilis,42.106,
+Log,3Gb,Canu,C. neoformans,,
+Log,3Gb,Canu,En. faecalis,,
+Log,3Gb,Canu,E. coli,,
+Log,3Gb,Canu,L. fermentum,,
+Log,3Gb,Canu,Li. monocytogenes,99.967,
+Log,3Gb,Canu,P. aeruginosa,99.684,
+Log,3Gb,Canu,S. cerevisiae,1.817,
+Log,3Gb,Canu,Sa. enterica,,
+Log,3Gb,Canu,St. aureus,,
+Log,3Gb,metaFlye v2.4,B. subtilis,91.444,
+Log,3Gb,metaFlye v2.4,C. neoformans,0.029,
+Log,3Gb,metaFlye v2.4,En. faecalis,0.082,
+Log,3Gb,metaFlye v2.4,E. coli,0.068,
+Log,3Gb,metaFlye v2.4,L. fermentum,0.229,
+Log,3Gb,metaFlye v2.4,Li. monocytogenes,100,
+Log,3Gb,metaFlye v2.4,P. aeruginosa,99.953,
+Log,3Gb,metaFlye v2.4,S. cerevisiae,3.856,
+Log,3Gb,metaFlye v2.4,Sa. enterica,0.014,
+Log,3Gb,metaFlye v2.4,St. aureus,0.137,
+Log,3Gb,Megahit,B. subtilis,17.447,
+Log,3Gb,Megahit,C. neoformans,0.003,
+Log,3Gb,Megahit,En. faecalis,0.654,
+Log,3Gb,Megahit,E. coli,3.798,
+Log,3Gb,Megahit,L. fermentum,0.027,
+Log,3Gb,Megahit,Li. monocytogenes,49.731,
+Log,3Gb,Megahit,P. aeruginosa,11.546,
+Log,3Gb,Megahit,S. cerevisiae,12.292,
+Log,3Gb,Megahit,Sa. enterica,2.866,
+Log,3Gb,Megahit,St. aureus,0.005,
+Log,3Gb,Minia,B. subtilis,0.083,
+Log,3Gb,Minia,C. neoformans,,
+Log,3Gb,Minia,En. faecalis,,
+Log,3Gb,Minia,E. coli,,
+Log,3Gb,Minia,L. fermentum,,
+Log,3Gb,Minia,Li. monocytogenes,,
+Log,3Gb,Minia,P. aeruginosa,0.31,
+Log,3Gb,Minia,S. cerevisiae,,
+Log,3Gb,Minia,Sa. enterica,,
+Log,3Gb,Minia,St. aureus,,
+Log,3Gb,Unicycler,B. subtilis,,
+Log,3Gb,Unicycler,C. neoformans,,
+Log,3Gb,Unicycler,En. faecalis,,
+Log,3Gb,Unicycler,E. coli,,
+Log,3Gb,Unicycler,L. fermentum,,
+Log,3Gb,Unicycler,Li. monocytogenes,,
+Log,3Gb,Unicycler,P. aeruginosa,,
+Log,3Gb,Unicycler,S. cerevisiae,,
+Log,3Gb,Unicycler,Sa. enterica,,
+Log,3Gb,Unicycler,St. aureus,,
+Log,3Gb,Pomoxis,B. subtilis,80.999,
+Log,3Gb,Pomoxis,C. neoformans,0.008,
+Log,3Gb,Pomoxis,En. faecalis,,
+Log,3Gb,Pomoxis,E. coli,,
+Log,3Gb,Pomoxis,L. fermentum,,
+Log,3Gb,Pomoxis,Li. monocytogenes,99.836,
+Log,3Gb,Pomoxis,P. aeruginosa,99.961,
+Log,3Gb,Pomoxis,S. cerevisiae,1.046,
+Log,3Gb,Pomoxis,Sa. enterica,,
+Log,3Gb,Pomoxis,St. aureus,,
+Log,3Gb,Raven,B. subtilis,67.856,
+Log,3Gb,Raven,C. neoformans,,
+Log,3Gb,Raven,En. faecalis,,
+Log,3Gb,Raven,E. coli,,
+Log,3Gb,Raven,L. fermentum,,
+Log,3Gb,Raven,Li. monocytogenes,99.963,
+Log,3Gb,Raven,P. aeruginosa,99.939,
+Log,3Gb,Raven,S. cerevisiae,0.089,
+Log,3Gb,Raven,Sa. enterica,,
+Log,3Gb,Raven,St. aureus,,
+Log,3Gb,RedBean,B. subtilis,22.705,
+Log,3Gb,RedBean,C. neoformans,,
+Log,3Gb,RedBean,En. faecalis,0.026,
+Log,3Gb,RedBean,E. coli,0.037,
+Log,3Gb,RedBean,L. fermentum,0.004,
+Log,3Gb,RedBean,Li. monocytogenes,0.215,
+Log,3Gb,RedBean,P. aeruginosa,89.299,
+Log,3Gb,RedBean,S. cerevisiae,0.64,
+Log,3Gb,RedBean,Sa. enterica,0.012,
+Log,3Gb,RedBean,St. aureus,0.005,
+Log,3Gb,Shasta,B. subtilis,,
+Log,3Gb,Shasta,C. neoformans,,
+Log,3Gb,Shasta,En. faecalis,,
+Log,3Gb,Shasta,E. coli,,
+Log,3Gb,Shasta,L. fermentum,,
+Log,3Gb,Shasta,Li. monocytogenes,99.929,
+Log,3Gb,Shasta,P. aeruginosa,84.434,
+Log,3Gb,Shasta,S. cerevisiae,,
+Log,3Gb,Shasta,Sa. enterica,,
+Log,3Gb,Shasta,St. aureus,,
+Log,3Gb,metaFlye v2.7,B. subtilis,88.931,
+Log,3Gb,metaFlye v2.7,C. neoformans,0.006,
+Log,3Gb,metaFlye v2.7,En. faecalis,,
+Log,3Gb,metaFlye v2.7,E. coli,0.049,
+Log,3Gb,metaFlye v2.7,L. fermentum,,
+Log,3Gb,metaFlye v2.7,Li. monocytogenes,99.964,
+Log,3Gb,metaFlye v2.7,P. aeruginosa,99.998,
+Log,3Gb,metaFlye v2.7,S. cerevisiae,1.988,
+Log,3Gb,metaFlye v2.7,Sa. enterica,0.046,
+Log,3Gb,metaFlye v2.7,St. aureus,,
+Log,6Gb,Canu,B. subtilis,78.189,74.388
+Log,6Gb,Canu,C. neoformans,,
+Log,6Gb,Canu,En. faecalis,,
+Log,6Gb,Canu,E. coli,0.509,0.3345
+Log,6Gb,Canu,L. fermentum,,
+Log,6Gb,Canu,Li. monocytogenes,99.976,99.9735
+Log,6Gb,Canu,P. aeruginosa,99.998,99.9825
+Log,6Gb,Canu,S. cerevisiae,8.205,8.137
+Log,6Gb,Canu,Sa. enterica,0.027,0.0275
+Log,6Gb,Canu,St. aureus,,
+Log,6Gb,metaFlye v2.4,B. subtilis,97.449,98.425
+Log,6Gb,metaFlye v2.4,C. neoformans,0.032,0.031
+Log,6Gb,metaFlye v2.4,En. faecalis,0.127,0.127
+Log,6Gb,metaFlye v2.4,E. coli,0.453,0.453
+Log,6Gb,metaFlye v2.4,L. fermentum,0.031,0.031
+Log,6Gb,metaFlye v2.4,Li. monocytogenes,100,99.988
+Log,6Gb,metaFlye v2.4,P. aeruginosa,100,100
+Log,6Gb,metaFlye v2.4,S. cerevisiae,9.649,13.7005
+Log,6Gb,metaFlye v2.4,Sa. enterica,0.036,0.036
+Log,6Gb,metaFlye v2.4,St. aureus,0.082,0.082
+Log,6Gb,Megahit,B. subtilis,15.117,17.3355
+Log,6Gb,Megahit,C. neoformans,0.02,0.0105
+Log,6Gb,Megahit,En. faecalis,0.7,0.5945
+Log,6Gb,Megahit,E. coli,8.262,8.004
+Log,6Gb,Megahit,L. fermentum,0.523,0.4095
+Log,6Gb,Megahit,Li. monocytogenes,35.438,39.7115
+Log,6Gb,Megahit,P. aeruginosa,7.884,9.001
+Log,6Gb,Megahit,S. cerevisiae,14.484,15.6045
+Log,6Gb,Megahit,Sa. enterica,6.647,6.695
+Log,6Gb,Megahit,St. aureus,0.016,0.016
+Log,6Gb,Minia,B. subtilis,,
+Log,6Gb,Minia,C. neoformans,,
+Log,6Gb,Minia,En. faecalis,,
+Log,6Gb,Minia,E. coli,,
+Log,6Gb,Minia,L. fermentum,,
+Log,6Gb,Minia,Li. monocytogenes,,
+Log,6Gb,Minia,P. aeruginosa,6.457,11.3815
+Log,6Gb,Minia,S. cerevisiae,0.079,0.0835
+Log,6Gb,Minia,Sa. enterica,,
+Log,6Gb,Minia,St. aureus,,
+Log,6Gb,Unicycler,B. subtilis,,
+Log,6Gb,Unicycler,C. neoformans,,0.034
+Log,6Gb,Unicycler,En. faecalis,,
+Log,6Gb,Unicycler,E. coli,,
+Log,6Gb,Unicycler,L. fermentum,,
+Log,6Gb,Unicycler,Li. monocytogenes,0,32.59
+Log,6Gb,Unicycler,P. aeruginosa,0.029,0.029
+Log,6Gb,Unicycler,S. cerevisiae,0,2.073
+Log,6Gb,Unicycler,Sa. enterica,,
+Log,6Gb,Unicycler,St. aureus,,
+Log,6Gb,Pomoxis,B. subtilis,,
+Log,6Gb,Pomoxis,C. neoformans,,
+Log,6Gb,Pomoxis,En. faecalis,,
+Log,6Gb,Pomoxis,E. coli,,
+Log,6Gb,Pomoxis,L. fermentum,,
+Log,6Gb,Pomoxis,Li. monocytogenes,,
+Log,6Gb,Pomoxis,P. aeruginosa,,
+Log,6Gb,Pomoxis,S. cerevisiae,,
+Log,6Gb,Pomoxis,Sa. enterica,,
+Log,6Gb,Pomoxis,St. aureus,,
+Log,6Gb,Raven,B. subtilis,99.281,99.1945
+Log,6Gb,Raven,C. neoformans,0.167,0.167
+Log,6Gb,Raven,En. faecalis,0.167,0.171
+Log,6Gb,Raven,E. coli,0.01,0.0075
+Log,6Gb,Raven,L. fermentum,0.118,0.139
+Log,6Gb,Raven,Li. monocytogenes,99.961,99.9445
+Log,6Gb,Raven,P. aeruginosa,99.945,99.959
+Log,6Gb,Raven,S. cerevisiae,0.781,0.8305
+Log,6Gb,Raven,Sa. enterica,0.01,0.007
+Log,6Gb,Raven,St. aureus,0.102,0.1295
+Log,6Gb,RedBean,B. subtilis,81.855,83.638
+Log,6Gb,RedBean,C. neoformans,,0.001
+Log,6Gb,RedBean,En. faecalis,0.043,0.043
+Log,6Gb,RedBean,E. coli,0.413,0.3155
+Log,6Gb,RedBean,L. fermentum,0.026,0.026
+Log,6Gb,RedBean,Li. monocytogenes,0.263,0.5005
+Log,6Gb,RedBean,P. aeruginosa,98.644,97.613
+Log,6Gb,RedBean,S. cerevisiae,2.238,2.0165
+Log,6Gb,RedBean,Sa. enterica,0.162,0.162
+Log,6Gb,RedBean,St. aureus,0.018,0.0105
+Log,6Gb,Shasta,B. subtilis,,
+Log,6Gb,Shasta,C. neoformans,0.003,0.0035
+Log,6Gb,Shasta,En. faecalis,,
+Log,6Gb,Shasta,E. coli,,
+Log,6Gb,Shasta,L. fermentum,,
+Log,6Gb,Shasta,Li. monocytogenes,99.961,99.7955
+Log,6Gb,Shasta,P. aeruginosa,99.987,99.9235
+Log,6Gb,Shasta,S. cerevisiae,0.057,0.0575
+Log,6Gb,Shasta,Sa. enterica,,
+Log,6Gb,Shasta,St. aureus,,
+Log,6Gb,metaFlye v2.7,B. subtilis,97.193,97.9835
+Log,6Gb,metaFlye v2.7,C. neoformans,0.005,0.0275
+Log,6Gb,metaFlye v2.7,En. faecalis,,
+Log,6Gb,metaFlye v2.7,E. coli,0.488,0.488
+Log,6Gb,metaFlye v2.7,L. fermentum,,
+Log,6Gb,metaFlye v2.7,Li. monocytogenes,99.964,99.964
+Log,6Gb,metaFlye v2.7,P. aeruginosa,99.998,99.998
+Log,6Gb,metaFlye v2.7,S. cerevisiae,5.544,9.7485
+Log,6Gb,metaFlye v2.7,Sa. enterica,0.199,0.199
+Log,6Gb,metaFlye v2.7,St. aureus,,
+Log,6Gb,Canu,B. subtilis,70.587,
+Log,6Gb,Canu,C. neoformans,,
+Log,6Gb,Canu,En. faecalis,,
+Log,6Gb,Canu,E. coli,0.16,
+Log,6Gb,Canu,L. fermentum,,
+Log,6Gb,Canu,Li. monocytogenes,99.971,
+Log,6Gb,Canu,P. aeruginosa,99.967,
+Log,6Gb,Canu,S. cerevisiae,8.069,
+Log,6Gb,Canu,Sa. enterica,0.028,
+Log,6Gb,Canu,St. aureus,,
+Log,6Gb,metaFlye v2.4,B. subtilis,99.401,
+Log,6Gb,metaFlye v2.4,C. neoformans,0.03,
+Log,6Gb,metaFlye v2.4,En. faecalis,,
+Log,6Gb,metaFlye v2.4,E. coli,,
+Log,6Gb,metaFlye v2.4,L. fermentum,,
+Log,6Gb,metaFlye v2.4,Li. monocytogenes,99.976,
+Log,6Gb,metaFlye v2.4,P. aeruginosa,100,
+Log,6Gb,metaFlye v2.4,S. cerevisiae,17.752,
+Log,6Gb,metaFlye v2.4,Sa. enterica,,
+Log,6Gb,metaFlye v2.4,St. aureus,,
+Log,6Gb,Megahit,B. subtilis,19.554,
+Log,6Gb,Megahit,C. neoformans,0.001,
+Log,6Gb,Megahit,En. faecalis,0.489,
+Log,6Gb,Megahit,E. coli,7.746,
+Log,6Gb,Megahit,L. fermentum,0.296,
+Log,6Gb,Megahit,Li. monocytogenes,43.985,
+Log,6Gb,Megahit,P. aeruginosa,10.118,
+Log,6Gb,Megahit,S. cerevisiae,16.725,
+Log,6Gb,Megahit,Sa. enterica,6.743,
+Log,6Gb,Megahit,St. aureus,,
+Log,6Gb,Minia,B. subtilis,,
+Log,6Gb,Minia,C. neoformans,,
+Log,6Gb,Minia,En. faecalis,,
+Log,6Gb,Minia,E. coli,,
+Log,6Gb,Minia,L. fermentum,,
+Log,6Gb,Minia,Li. monocytogenes,,
+Log,6Gb,Minia,P. aeruginosa,16.306,
+Log,6Gb,Minia,S. cerevisiae,0.088,
+Log,6Gb,Minia,Sa. enterica,,
+Log,6Gb,Minia,St. aureus,,
+Log,6Gb,Unicycler,B. subtilis,,
+Log,6Gb,Unicycler,C. neoformans,0.034,
+Log,6Gb,Unicycler,En. faecalis,,
+Log,6Gb,Unicycler,E. coli,,
+Log,6Gb,Unicycler,L. fermentum,,
+Log,6Gb,Unicycler,Li. monocytogenes,32.59,
+Log,6Gb,Unicycler,P. aeruginosa,,
+Log,6Gb,Unicycler,S. cerevisiae,2.073,
+Log,6Gb,Unicycler,Sa. enterica,,
+Log,6Gb,Unicycler,St. aureus,,
+Log,6Gb,Pomoxis,B. subtilis,,
+Log,6Gb,Pomoxis,C. neoformans,,
+Log,6Gb,Pomoxis,En. faecalis,,
+Log,6Gb,Pomoxis,E. coli,,
+Log,6Gb,Pomoxis,L. fermentum,,
+Log,6Gb,Pomoxis,Li. monocytogenes,,
+Log,6Gb,Pomoxis,P. aeruginosa,,
+Log,6Gb,Pomoxis,S. cerevisiae,,
+Log,6Gb,Pomoxis,Sa. enterica,,
+Log,6Gb,Pomoxis,St. aureus,,
+Log,6Gb,Raven,B. subtilis,99.108,
+Log,6Gb,Raven,C. neoformans,,
+Log,6Gb,Raven,En. faecalis,0.175,
+Log,6Gb,Raven,E. coli,0.005,
+Log,6Gb,Raven,L. fermentum,0.16,
+Log,6Gb,Raven,Li. monocytogenes,99.928,
+Log,6Gb,Raven,P. aeruginosa,99.973,
+Log,6Gb,Raven,S. cerevisiae,0.88,
+Log,6Gb,Raven,Sa. enterica,0.004,
+Log,6Gb,Raven,St. aureus,0.157,
+Log,6Gb,RedBean,B. subtilis,85.421,
+Log,6Gb,RedBean,C. neoformans,0.001,
+Log,6Gb,RedBean,En. faecalis,,
+Log,6Gb,RedBean,E. coli,0.218,
+Log,6Gb,RedBean,L. fermentum,,
+Log,6Gb,RedBean,Li. monocytogenes,0.738,
+Log,6Gb,RedBean,P. aeruginosa,96.582,
+Log,6Gb,RedBean,S. cerevisiae,1.795,
+Log,6Gb,RedBean,Sa. enterica,0.162,
+Log,6Gb,RedBean,St. aureus,0.003,
+Log,6Gb,Shasta,B. subtilis,,
+Log,6Gb,Shasta,C. neoformans,0.004,
+Log,6Gb,Shasta,En. faecalis,,
+Log,6Gb,Shasta,E. coli,,
+Log,6Gb,Shasta,L. fermentum,,
+Log,6Gb,Shasta,Li. monocytogenes,99.63,
+Log,6Gb,Shasta,P. aeruginosa,99.86,
+Log,6Gb,Shasta,S. cerevisiae,0.058,
+Log,6Gb,Shasta,Sa. enterica,,
+Log,6Gb,Shasta,St. aureus,,
+Log,6Gb,metaFlye v2.7,B. subtilis,98.774,
+Log,6Gb,metaFlye v2.7,C. neoformans,0.05,
+Log,6Gb,metaFlye v2.7,En. faecalis,,
+Log,6Gb,metaFlye v2.7,E. coli,,
+Log,6Gb,metaFlye v2.7,L. fermentum,,
+Log,6Gb,metaFlye v2.7,Li. monocytogenes,99.964,
+Log,6Gb,metaFlye v2.7,P. aeruginosa,99.998,
+Log,6Gb,metaFlye v2.7,S. cerevisiae,13.953,
+Log,6Gb,metaFlye v2.7,Sa. enterica,,
+Log,6Gb,metaFlye v2.7,St. aureus,,

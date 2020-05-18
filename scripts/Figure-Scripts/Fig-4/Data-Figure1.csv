@@ -1,0 +1,41 @@
+Genome,Assembler,Contigs,N50,Assembled,Genome_fraction,Output
+B. subtilis,metaFlye v2.7,9,4022853,-429683,99.685,14 Gbp
+C. neoformans,metaFlye v2.7,566,76109,-2876287,61.702,14 Gbp
+En. faecalis,metaFlye v2.7,2,2837223,103281,100,14 Gbp
+E. coli,metaFlye v2.7,12,4003190,-4658133,99.938,14 Gbp
+L. fermentum,metaFlye v2.7,9,1887021,-188170,100,14 Gbp
+Li. monocytogenes,metaFlye v2.7,8,2108251,-934139,99.733,14 Gbp
+P. aeruginosa,metaFlye v2.7,2,6787420,-238407,99.987,14 Gbp
+S. cerevisiae,metaFlye v2.7,68,341334,-180778,94.108,14 Gbp
+Sa. enterica,metaFlye v2.7,9,4003190,-4211818,99.612,14 Gbp
+St. aureus,metaFlye v2.7,10,2714577,33322,99.999,14 Gbp
+B. subtilis,Canu,7,4036671,-2699351,99.958,14 Gbp
+C. neoformans,Canu,1093,10991,9191285,30.916,14 Gbp
+En. faecalis,Canu,3,5668105,-2755504,100,14 Gbp
+E. coli,Canu,3,4776960,-214154,100,14 Gbp
+L. fermentum,Canu,9,5668105,-5530757,100,14 Gbp
+Li. monocytogenes,Canu,4,5668105,-3087764,99.971,14 Gbp
+P. aeruginosa,Canu,2,6802443,-231776,99.998,14 Gbp
+S. cerevisiae,Canu,366,22495,5426188,42.949,14 Gbp
+Sa. enterica,Canu,1,4763733,17017,99.927,14 Gbp
+St. aureus,Canu,4,2731491,55279,100,14 Gbp
+B. subtilis,Raven,2,4035787,72120,99.98,14 Gbp
+C. neoformans,Raven,264,109386,-637635,55.887,14 Gbp
+En. faecalis,Raven,3,5819917,-7004075,100,14 Gbp
+E. coli,Raven,19,1577308,-5491205,94.899,14 Gbp
+L. fermentum,Raven,1,1901040,110530,99.901,14 Gbp
+Li. monocytogenes,Raven,3,5819917,-7010034,99.954,14 Gbp
+P. aeruginosa,Raven,1,6785588,-193468,99.952,14 Gbp
+S. cerevisiae,Raven,43,488617,20752,93.883,14 Gbp
+Sa. enterica,Raven,15,1577308,-5970288,96.213,14 Gbp
+St. aureus,Raven,2,4035787,-3938634,99.577,14 Gbp
+B. subtilis,RedBean,3,3949217,-611064,99.532,14 Gbp
+C. neoformans,RedBean,88,8986,17817880,0.742,14 Gbp
+En. faecalis,RedBean,3,3949217,-4547928,99.871,14 Gbp
+E. coli,RedBean,64,294637,-798927,66.388,14 Gbp
+L. fermentum,RedBean,3,3949217,-4556650,99.356,14 Gbp
+Li. monocytogenes,RedBean,6,3949217,-4594614,97.948,14 Gbp
+P. aeruginosa,RedBean,5,4566759,-879875,99.377,14 Gbp
+S. cerevisiae,RedBean,79,14551,10835606,1.925,14 Gbp
+Sa. enterica,RedBean,33,332608,-53261,63.436,14 Gbp
+St. aureus,RedBean,4,3949217,-4565772,99.599,14 Gbp

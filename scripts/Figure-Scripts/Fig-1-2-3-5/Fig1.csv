@@ -1,0 +1,45 @@
+Mock_Community,Output,Assembler,Time,Contigs,N50,L50,Length
+Even,3Gb,Minia,9197.737,4540,643,1846,Short-reads
+Even,3Gb,Minia,8304.526,5490,659,2182,Short-reads
+Even,3Gb,Megahit,5253.507,103985,1216,27139,Short-reads
+Even,3Gb,Megahit,4989.36,102456,1253,26557,Short-reads
+Even,3Gb,Canu,10978.687,883,1163820,6,Long-reads
+Even,3Gb,Canu,12483.032,900,642230,11,Long-reads
+Even,3Gb,Unicycler,7700.913,94,2779880,4,Long-reads
+Even,3Gb,Unicycler,8968.157,83,2034125,5,Long-reads
+Even,3Gb,miniasm,654.505,130,1885531,5,Long-reads
+Even,3Gb,miniasm,708.913,130,2033537,5,Long-reads
+Even,3Gb,metaFlye v2.4,3559.961,359,2916346,5,Long-reads
+Even,3Gb,metaFlye v2.4,3330.583,322,2131086,6,Long-reads
+Even,3Gb,Raven,1575.824,107,2838930,4,Long-reads
+Even,3Gb,Raven,1709.401,111,2716031,4,Long-reads
+Even,3Gb,RedBean,581.017,537,820672,10,Long-reads
+Even,3Gb,RedBean,595.181,449,787102,13,Long-reads
+Even,3Gb,Shasta,127.911,108,855983,4,Long-reads
+Even,3Gb,Shasta,143.778,95,1043084,4,Long-reads
+Even,3Gb,metaFlye v2.7,3027.983,281,2713249,5,Long-reads
+Even,3Gb,metaFlye v2.7,3145.585,251,4024367,4,Long-reads
+Even,3Gb,Pomoxis,4304.933,411,1359179,6,Long-reads
+Even,3Gb,Pomoxis,4062.48,399,1705012,7,Long-reads
+Even,6Gb,Minia,37099.649,3901,654,1581,Short-reads
+Even,6Gb,Minia,33416.486,4677,679,1846,Short-reads
+Even,6Gb,Megahit,10327.801,186134,1105,52475,Short-reads
+Even,6Gb,Megahit,9674.742,180636,1139,50217,Short-reads
+Even,6Gb,Canu,38568.393,1555,640396,13,Long-reads
+Even,6Gb,Canu,43858.387,1565,568807,13,Long-reads
+Even,6Gb,Unicycler,16631.639,304,45271,72,Long-reads
+Even,6Gb,Unicycler,17319.445,294,66707,67,Long-reads
+Even,6Gb,miniasm,2510.74,287,1880034,5,Long-reads
+Even,6Gb,miniasm,2729.335,255,2041461,5,Long-reads
+Even,6Gb,metaFlye v2.4,7950.856,897,1282129,9,Long-reads
+Even,6Gb,metaFlye v2.4,7838.849,876,1904318,8,Long-reads
+Even,6Gb,Raven,5295.183,574,1245136,7,Long-reads
+Even,6Gb,Raven,4979.566,568,789908,7,Long-reads
+Even,6Gb,RedBean,1238.877,999,1093208,7,Long-reads
+Even,6Gb,RedBean,1259.508,925,702782,11,Long-reads
+Even,6Gb,Shasta,284.967,165,4762717,2,Long-reads
+Even,6Gb,Shasta,285.085,148,4664589,2,Long-reads
+Even,6Gb,metaFlye v2.7,7362.655,821,2116196,7,Long-reads
+Even,6Gb,metaFlye v2.7,7623.861,786,2833748,6,Long-reads
+Even,6Gb,Pomoxis,12706.833,940,233266,19,Long-reads
+Even,6Gb,Pomoxis,12235.607,923,299631,14,Long-reads

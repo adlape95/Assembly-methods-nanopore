@@ -1,0 +1,45 @@
+Mock_Community,Output,Assembler,Assembly_size,bcftools_orig,MuMmer_orig,bcftools,MuMmer,Label_bcftools,Label_MuMmer,mean_bcftools,mean_MuMmer
+Even,3Gb,Minia,3017266,17824,225124,0.591,7.461,bcftools,MuMmer,0.519,6.744
+Even,3Gb,Minia,3750467,16743,226002,0.446,6.026,bcftools,MuMmer,,
+Even,3Gb,Megahit,113608216,26342,3129337,0.023,2.754,bcftools,MuMmer,0.023,2.745
+Even,3Gb,Megahit,114342640,25730,3128281,0.023,2.736,bcftools,MuMmer,,
+Even,3Gb,Canu,33192044,21259,234065,0.064,0.705,bcftools,MuMmer,0.067,0.747
+Even,3Gb,Canu,33658298,23519,265189,0.07,0.788,bcftools,MuMmer,,
+Even,3Gb,Unicycler,32036161,16222,113047,0.051,0.353,bcftools,MuMmer,0.046,0.323
+Even,3Gb,Unicycler,31799817,13401,93437,0.042,0.294,bcftools,MuMmer,,
+Even,3Gb,miniasm,32117009,12806,1996390,0.04,6.216,bcftools,MuMmer,0.039,6.261
+Even,3Gb,miniasm,31422480,12047,1981271,0.038,6.305,bcftools,MuMmer,,
+Even,3Gb,metaFlye v2.4,37598196,58796,684309,0.156,1.82,bcftools,MuMmer,0.158,1.664
+Even,3Gb,metaFlye v2.4,37039411,59219,558881,0.16,1.509,bcftools,MuMmer,,
+Even,3Gb,Raven,30833384,17317,135470,0.056,0.439,bcftools,MuMmer,0.054,0.419
+Even,3Gb,Raven,31227737,16367,124506,0.052,0.399,bcftools,MuMmer,,
+Even,3Gb,RedBean,29796339,21433,447303,0.072,1.501,bcftools,MuMmer,0.07,1.492
+Even,3Gb,RedBean,29242172,19934,433422,0.068,1.482,bcftools,MuMmer,,
+Even,3Gb,Shasta,17596621,42394,240115,0.241,1.365,bcftools,MuMmer,0.238,1.303
+Even,3Gb,Shasta,16704318,39334,207377,0.235,1.241,bcftools,MuMmer,,
+Even,3Gb,metaFlye v2.7,35885557,14523,218870,0.04,0.61,bcftools,MuMmer,0.037,0.567
+Even,3Gb,metaFlye v2.7,35283360,11760,184895,0.033,0.524,bcftools,MuMmer,,
+Even,3Gb,Pomoxis,35136155,17685,180542,0.05,0.515,bcftools,MuMmer,0.0465,0.4865
+Even,3Gb,Pomoxis,34879183,15019,159429,0.043,0.458,bcftools,MuMmer,,
+Even,6Gb,Minia,2617253,16311,215692,0.623,8.241,bcftools,MuMmer,0.55,7.632
+Even,6Gb,Minia,3254245,15535,228509,0.477,7.022,bcftools,MuMmer,,
+Even,6Gb,Megahit,190234021,28104,3351509,0.015,1.762,bcftools,MuMmer,0.015,1.752
+Even,6Gb,Megahit,188353345,28726,3279931,0.015,1.741,bcftools,MuMmer,,
+Even,6Gb,Canu,43633440,30336,352403,0.07,0.808,bcftools,MuMmer,0.072,0.852
+Even,6Gb,Canu,44090450,32433,395101,0.074,0.896,bcftools,MuMmer,,
+Even,6Gb,Unicycler,10458256,5367,64369,0.051,0.615,bcftools,MuMmer,0.05,0.61
+Even,6Gb,Unicycler,14178497,6937,85624,0.049,0.604,bcftools,MuMmer,,
+Even,6Gb,miniasm,34296244,13247,2137088,0.039,6.231,bcftools,MuMmer,0.039,6.269
+Even,6Gb,miniasm,32982327,12696,2079824,0.038,6.306,bcftools,MuMmer,,
+Even,6Gb,metaFlye v2.4,53424158,79556,1112548,0.149,2.082,bcftools,MuMmer,0.149,1.899
+Even,6Gb,metaFlye v2.4,52663021,78321,903905,0.149,1.716,bcftools,MuMmer,,
+Even,6Gb,Raven,42891309,34677,306378,0.081,0.714,bcftools,MuMmer,0.078,0.696
+Even,6Gb,Raven,43484237,32415,294814,0.075,0.678,bcftools,MuMmer,,
+Even,6Gb,RedBean,36141508,24146,757944,0.067,2.097,bcftools,MuMmer,0.066,2.115
+Even,6Gb,RedBean,36297573,23554,773992,0.065,2.132,bcftools,MuMmer,,
+Even,6Gb,Shasta,18486811,36435,211878,0.197,1.146,bcftools,MuMmer,0.189,1.033
+Even,6Gb,Shasta,21991676,39974,202210,0.182,0.919,bcftools,MuMmer,,
+Even,6Gb,metaFlye v2.7,50539766,35051,449671,0.069,0.89,bcftools,MuMmer,0.06,0.828
+Even,6Gb,metaFlye v2.7,49572147,25560,379673,0.052,0.766,bcftools,MuMmer,,
+Even,6Gb,Pomoxis,48707206,39684,387958,0.082,0.797,bcftools,MuMmer,0.0745,0.7515
+Even,6Gb,Pomoxis,48372863,32601,341267,0.067,0.706,bcftools,MuMmer,,

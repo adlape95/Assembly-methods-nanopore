@@ -1,0 +1,174 @@
+---
+title: "Misassemblies"
+author: "Pascual Villalba"
+date: "10th May 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r}
+## Library
+library(ggplot2)
+library(RColorBrewer)
+library(dplyr)
+
+## Dataset
+misassemblies = read.csv(file = "Missassemblies-Flye-MetaFlye.csv", header = TRUE, sep = ",")
+
+## Obtain the mean of each bar.
+misassemblies = misassemblies %>% group_by(Output, Assembler, Genome) %>% summarize(mean = mean(Missassemblies))
+```
+
+
+## **Misassemblies (Even GridION 3Gbps)**
+
+```{r}
+# Create a vectors of bacterial dataset.
+misassemblies_3Gbps_bact = misassemblies[which(misassemblies$Output == "3Gb" & misassemblies$Genome != "C. neoformans" & misassemblies$Genome != "S. cerevisiae"),]
+Output_3Gbps_bact = misassemblies_3Gbps_bact$Output
+Assembler_3Gbps_bact = misassemblies_3Gbps_bact$Assembler
+Genome_3Gbps_bact = misassemblies_3Gbps_bact$Genome
+Misassemblies_3Gbps_bact = misassemblies_3Gbps_bact$mean
+
+# Create a vectors of fungus dataset.
+misassemblies_3Gbps_fung = misassemblies[which(misassemblies$Output == "3Gb" & misassemblies$Genome == "C. neoformans" | misassemblies$Output == "3Gb" & misassemblies$Genome == "S. cerevisiae"),]
+Output_3Gbps_fung = misassemblies_3Gbps_fung$Output
+Assembler_3Gbps_fung = misassemblies_3Gbps_fung$Assembler
+Genome_3Gbps_fung = misassemblies_3Gbps_fung$Genome
+Misassemblies_3Gbps_fung = misassemblies_3Gbps_fung$mean
+```
+
+
+#### **Misassemblies bacterias**
+
+
+
+```{r}
+# Figure
+p1.1 = ggplot(misassemblies_3Gbps_bact, aes(fill=Assembler_3Gbps_bact, y=Misassemblies_3Gbps_bact, x=Genome_3Gbps_bact)) +
+  geom_bar(position="dodge", stat="identity", color = "black") + theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  ylab("Number of misassemblies") + xlab("Species") +
+  scale_y_continuous(breaks = seq(0, 100, 5)) +
+  scale_x_discrete(limits = c("B. subtilis", "E. coli", "E. faecalis", "L. fermentum", "L. monocytogenes", "P. aeruginosa", "S. aureus", "S. enterica")) +
+  guides(fill=guide_legend(title="Assembler")) +
+  geom_text(aes(label=Misassemblies_3Gbps_bact), position=position_dodge(width=0.9), size=3.5, vjust=-0.20) + scale_fill_brewer(palette = "Dark2") 
+
+p1.1.1 = p1.1  + ylab("") + xlab("")
+p1.1.2 = p1.1  + ylab("Number of misassemblies") + xlab("")
+
+p1.1
+```
+
+#### **Misassemblies fungus**
+
+```{r}
+# Figure
+p1.2 = ggplot(misassemblies_3Gbps_fung, aes(fill=Assembler_3Gbps_fung, y=Misassemblies_3Gbps_fung, x=Genome_3Gbps_fung)) +
+  geom_bar(position="dodge", stat="identity", color = "black") + theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  ylab("Number of misassemblies") + xlab("Species") +
+  scale_y_continuous(breaks = seq(0, 10000, 1000)) +
+  scale_x_discrete(limits = c("C. neoformans", "S. cerevisiae")) +
+  guides(fill=guide_legend(title="Assembler"))+
+  geom_text(aes(label=Misassemblies_3Gbps_fung), position=position_dodge(width=0.9), size=3.5, vjust=-0.25)+ scale_fill_brewer(palette = "Dark2") 
+
+p1.2.1 = p1.2  + ylab("") + xlab("")
+
+p1.2
+```
+
+
+
+
+```{r}
+library(gridExtra)
+library(ggpubr)
+
+p1 = ggarrange(p1.1.2 ,p1.2.1, legend = "top", common.legend = TRUE, widths = c(2,1.2), labels = "A")
+p3 = ggarrange(p1.1.1 ,p1.2.1, legend = "top", common.legend = TRUE, widths = c(2,1.2), labels = "A")
+
+# Annotate the figure by adding a common labels
+p3 = annotate_figure(p3, bottom = text_grob("Species"),left = text_grob("Mean of misassemblies", rot = 90))
+
+p1
+p3
+```
+
+## **Misassemblies (Even GridION 6Gbps)**
+
+```{r}
+# Create a vectors of bacterial dataset.
+misassemblies_6Gbps_bact = misassemblies[which(misassemblies$Output == "6Gb" & misassemblies$Genome != "C. neoformans" & misassemblies$Genome != "S. cerevisiae"),]
+Output_6Gbps_bact = misassemblies_6Gbps_bact$Output
+Assembler_6Gbps_bact = misassemblies_6Gbps_bact$Assembler
+Genome_6Gbps_bact = misassemblies_6Gbps_bact$Genome
+Misassemblies_6Gbps_bact = misassemblies_6Gbps_bact$mean
+
+# Create a vectors of fungus dataset.
+misassemblies_6Gbps_fung = misassemblies[which(misassemblies$Output == "6Gb" & misassemblies$Genome == "C. neoformans" | misassemblies$Output == "6Gb" & misassemblies$Genome == "S. cerevisiae"),]
+Output_6Gbps_fung = misassemblies_6Gbps_fung$Output
+Assembler_6Gbps_fung = misassemblies_6Gbps_fung$Assembler
+Genome_6Gbps_fung = misassemblies_6Gbps_fung$Genome
+Misassemblies_6Gbps_fung = misassemblies_6Gbps_fung$mean
+```
+
+#### **Misassemblies bacterias**
+
+```{r}
+# Figure
+p2.1 = ggplot(misassemblies_6Gbps_bact, aes(fill=Assembler_6Gbps_bact, y=Misassemblies_6Gbps_bact, x=Genome_6Gbps_bact)) +
+  geom_bar(position="dodge", stat="identity", color = "black") + theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  ylab("Number of misassemblies") + xlab("Species") +
+  scale_y_continuous(breaks = seq(0, 100, 5)) +
+  scale_x_discrete(limits = c("B. subtilis", "E. coli", "E. faecalis", "L. fermentum", "L. monocytogenes", "P. aeruginosa", "S. aureus", "S. enterica")) +
+  guides(fill=guide_legend(title="Assembler")) +
+  geom_text(aes(label=Misassemblies_6Gbps_bact), position=position_dodge(width=0.9), size=3.5, vjust=-0.20)+ scale_fill_brewer(palette = "Dark2") 
+
+p2.1.1 = p2.1  + ylab("") + xlab("")
+p2.1.2 = p2.1  + ylab("Number of misassemblies") + xlab("")
+
+p2.1
+```
+
+#### **Misassemblies fungus**
+
+
+```{r}
+# Figure
+p2.2 = ggplot(misassemblies_6Gbps_fung, aes(fill=Assembler_6Gbps_fung, y=Misassemblies_6Gbps_fung, x=Genome_6Gbps_fung)) +
+  geom_bar(position="dodge", stat="identity", color = "black") + theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  ylab("Number of misassemblies") + xlab("Species") +
+  scale_y_continuous(breaks = seq(0, 13000, 1000)) +
+  scale_x_discrete(limits = c("C. neoformans", "S. cerevisiae")) +
+  guides(fill=guide_legend(title="Assembler"))+
+  geom_text(aes(label=Misassemblies_6Gbps_fung), position=position_dodge(width=0.9), size=3.5, vjust=-0.25)+ scale_fill_brewer(palette = "Dark2") 
+
+p2.2.1 = p2.2  + ylab("") + xlab("")
+
+p2.2
+```
+
+
+```{r}
+library(gridExtra)
+library(ggpubr)
+
+p2 = ggarrange(p2.1.2 ,p2.2.1, legend = "top", common.legend = TRUE, widths = c(2,1.2), labels = "B")
+p4 = ggarrange(p2.1.1 ,p2.2.1, legend = "top", common.legend = TRUE, widths = c(2,1.2), labels = "B")
+
+# Annotate the figure by adding a common labels
+p4 = annotate_figure(p4, bottom = text_grob("Species"),left = text_grob("Mean of misassemblies", rot = 90))
+
+p2
+p4
+```
+
+Save p1 and p2 figures. Then we will join them in Inkscape.

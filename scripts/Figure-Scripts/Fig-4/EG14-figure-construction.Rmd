@@ -1,0 +1,79 @@
+---
+title: "Entire Even GridION analysis"
+author: "Adriel Latorre Pérez"
+date: "8/5/2020"
+output: html_document
+---
+
+Document for the construction of Figures S and S.
+
+# Loading the data
+
+```{r results=FALSE}
+library(ggpubr)
+library(ggplot2)
+d.fig1 = read.csv2(file = "./Data-Figure1.csv", header = TRUE, sep = ",", dec = ".")
+d.fig1$N50 = d.fig1$N50 / 1000
+d.fig1$Assembled = d.fig1$Assembled / 1000000
+d.fig1
+```
+
+# Genome fraction assembled for each microbe
+
+```{r}
+p <- ggplot(data=d.fig1, aes(x=Output, y=Genome_fraction, fill=Genome)) +
+  geom_bar(stat="identity", color="black", position=position_dodge(), show.legend = FALSE) +
+  theme_bw() + ylab("Assembled Fraction (%)") + xlab("") + expand_limits(y=c(0, 105)) + 
+  facet_grid(rows = vars(Assembler), cols = vars(Genome)) +
+  geom_text(aes(label=Genome_fraction), vjust=-0.3, color="black", size=2.5)
+p
+```
+
+
+# Number of contigs
+
+```{r}
+p <- ggplot(data=d.fig1, aes(x=Genome, y=Contigs, fill=Assembler)) +
+  geom_bar(stat="identity", color="black", position=position_dodge(), show.legend = FALSE) +
+  theme_bw() + ylab("Assembled Fraction (%)") + xlab("") + expand_limits(y=c(0, 105)) + 
+  geom_text(aes(label=Contigs), position = position_dodge(),vjust=-0.3, color="black", size=2.5)
+p
+```
+
+Let's separate the yeasts and the bacteria
+
+*Yeasts*
+
+```{r}
+p <- ggplot(data=d.fig1[d.fig1$Genome == "C. neoformans" | d.fig1$Genome == "S. cerevisiae",], aes(x=Genome, y=Contigs, fill=Assembler)) +
+  geom_bar(stat="identity", color="black", position=position_dodge()) +
+  theme_bw() + ylab("Number of contigs") + xlab("") + 
+  geom_text(aes(label=Contigs, group = Assembler), position = position_dodge(width = 1),vjust=-0.3, color="black", size=3.5) + scale_fill_brewer(palette = "Dark2") + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+p
+```
+
+Text flags will be manually corrected by Inkscape
+
+*Bacteria*
+
+```{r}
+p2 <- ggplot(data=d.fig1[d.fig1$Genome != "C. neoformans" & d.fig1$Genome != "S. cerevisiae",], aes(x=Genome, y=Contigs, fill=Assembler)) +
+  geom_bar(stat="identity", color="black", position=position_dodge(), show.legend = FALSE) +
+  theme_bw() + ylab("Number of contigs") + xlab("") + 
+  geom_text(aes(label=Contigs, group = Assembler), position = position_dodge(width = 1),vjust=-0.3, color="black", size=3.5) + scale_fill_brewer(palette = "Dark2") + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+p2
+```
+
+Text flags will be manually corrected by Inkscape
+
+Now let's join the two figures:
+
+```{r}
+library(gridExtra)
+p2.f = ggarrange(p2, p, 
+          legend = TRUE, heights = c(1,1),
+          ncol = 2, nrow = 1)
+p2.f
+```
+
+Save the image and modify it with Inkscape
